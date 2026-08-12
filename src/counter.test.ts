@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { increment } from "./counter.js";
+import { increment } from "./counter.ts";
 
 test("increment returns a new revision", () => {
   const original = { value: 2, revision: 4 };
