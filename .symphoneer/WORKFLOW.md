@@ -11,7 +11,7 @@ agent:
   max_turns: 12
   max_retry_backoff_ms: 300000
 codex:
-  command: codex app-server
+  command: codex -m gpt-5.4 app-server
   approval_policy: on-request
   turn_timeout_ms: 1800000
   stall_timeout_ms: 300000
