@@ -30,5 +30,6 @@ symphoneer:
 Implement {{ issue.identifier }}: {{ issue.title }}.
 
 Keep the change narrowly scoped and deterministic. Do not introduce network access, databases,
-Redis, Docker, cloud credentials, or product scaffolding. Preserve `pnpm check` as the single
-verification entrypoint, run it, and stop for human review.
+Redis, Docker, cloud credentials, or product scaffolding. Follow the live Issue acceptance criteria,
+preserve `pnpm check` as the single verification entrypoint, and complete its requested branch and
+GitHub review handoff. Report a blocker if a required GitHub write is unavailable.
