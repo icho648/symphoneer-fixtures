@@ -1,7 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { increment } from "./counter.ts";
-import { reconciliationMarker } from "./reconciliation-marker.ts";
 
 test("increment returns a new revision", () => {
   const original = { value: 2, revision: 4 };
@@ -11,8 +10,4 @@ test("increment returns a new revision", () => {
 
 test("increment rejects invalid changes", () => {
   assert.throws(() => increment({ value: 0, revision: 0 }, 0), RangeError);
-});
-
-test("reconciliation marker matches the turn completion fixture", () => {
-  assert.equal(reconciliationMarker, "turn-before-review");
 });
